@@ -99,7 +99,7 @@ pip install -r requirements.txt
 python app.py
 <hr/> <h2>🔌 API Usage</h2> <p><strong>Endpoint:</strong></p>
 POST /predict
-<p><strong>Live API:</strong></p> <p> 👉 <a href="https://renewable-adoption-predictor.onrender.com/predict"> <strong>https://renewable-adoption-predictor.onrender.com/predict</strong> </a> </p> <p><strong>Sample Request:</strong></p>
+<p><strong>Live API:</strong></p> <p> 👉 <a href="https://renewable-adoption-predictor.onrender.com/predict"> <strong>https://renewable-adoption-predictor.onrender.com/</strong> </a> </p> <p><strong>Sample Request:</strong></p>
 {
   "feature1": 5,
   "feature2": 3,
