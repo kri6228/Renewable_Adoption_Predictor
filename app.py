@@ -7,15 +7,17 @@ app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 # ✅ Load the CORRECT model file
 model = joblib.load("Renewable_Energy_Adoption_model.pkl")
-
-
+@app.route("/")
+def home():
+    return render_template("index.html")
+'''
 @app.route("/", methods=["GET"])
 def home():
     return {
         "message": "Renewable Adoption Predictor API is running",
         "usage": "Send a POST request to /predict with JSON data"
     }
-
+'''
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
